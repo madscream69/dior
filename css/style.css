@@ -200,7 +200,7 @@ body{
     background-image: url(../images/accordeon.jpg);
     width: 65px;
     height: 120px;
-    bottom: -73px;
+    bottom: -105px;
     left: 268px;
 }
 .accordeon__trigger{
@@ -232,7 +232,6 @@ body{
     margin-bottom: 10px;
     
 }
-/* 39:39 */
 
 .products {
     margin-bottom: 150px;
@@ -384,6 +383,9 @@ body{
     .about__textbox{
         display: block;
     }
+    .accordeon__inner{
+        padding-left: 0;
+    }
 }
 @media (max-width: 992px) {
     .header__title{
@@ -413,6 +415,22 @@ body{
     .top-slide__btn{
         margin: 50px auto 20px;
         
+    }
+}
+@media (max-width: 768px) {
+    .accordeon__trigger{
+        display: block;
+        padding-top: 20px;
+    }
+    .accordeon__trigger-title{
+        padding-bottom: 10px;
+    }
+    .accordeon__item::before{
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        right: 25px;
     }
 }
 @media (max-width: 630px) {
@@ -446,6 +464,13 @@ body{
         margin-bottom: 0;
         
     }
+
+    .accordeon__item{
+        padding: 0 50px 0 0;
+    }
+    .accordeon__trigger-text{
+        margin-right: 0;
+    }
 }
 @media (max-width: 420px) {
     .header__inner{
@@ -468,6 +493,9 @@ body{
     }
     .about__slider{
         width: 1500px;
+    }
+    .accordeon__item:last-child::after{
+        left: 210px;
     }
 }
 @media (max-width: 375px){
